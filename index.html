@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harmonix Music</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./vendor/jquery-simplyscroll/jquery.simplyscroll.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="./vendor/fontawesome/css/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="./css/harmonix.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/Harmonix_Music_02.png" width="150" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rehearsalstudio/index.html">Rehearse Studio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in"></div>
+          <div class="intro-heading"></div>
+          <a href="#about" class="btn btn-circle page-scroll">
+            <i class="fas fa-angle-double-down animated"></i>
+          </a>
+      </div>
+      </div>
+    </header>
+    
+    <section id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">About Us</h2>
+                  <h3 class="section-subheading text-muted">Who We Are!</h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <p class="text-faded">Harmonix Music is a music outfit whose objective is to meet the genuine needs of musicians and music consumers through the provision of world-class quality products and services at an unbeatable rate.  We work hard at achieving these through the running of a wholesale and retail musical instrument and accessory shop. Already, as authorized distributors for such world-class manufacturers as <span class="about">Regaltip</span>, <span class="about">D’Addario</span>, <span class="about">Evans</span>, <span class="about">Planetwaves</span>, <span class="about">Promark</span> etc. we stock and have access to an array of world-class products which are fast becoming the toast among the instrumentalists and musical outfits here in Nigeria.</p>
+                <p class="text-faded">Our sound reinforcement and recording services lead by some of the best sound personnel around is well equipped with some of the industry finest brands such as <span class="about">AKG,</span> <span class="about">JBL,</span> <span class="about">EV,</span> <span class="about">Presonus,</span> <span class="about">Allen and Heath,</span> <span class="about">Radial Engineering,</span> <span class="about">Shure,</span> <span class="about">Sennheiser,</span> and many more.</p>
+                <p class="text-faded">Looking for a rehearsal room? Our Rehearsal rooms are setup to make your workday easy. Each room is fully equipped with great backlines, bass and guitar amps and sound reinforcement gears.</p>
+                <p class="text-faded">The need for mentoring and impacting musical knowledge brought about the establishment of our drum academy. This is aimed at grooming drummers at all levels through private lessons, workshops and master classes. This we hope to expand to other instruments in the nearest future.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <aside class="c-logo-part">
+      <ul  id="scroller">
+        <li><a href="#"><img src="img/addario.png" alt=""></a></li>
+        <li><a href="#"><img src="img/evans_1.png" alt=""></a></li>
+        <li><a href="#"><img src="img/elixir-logo_1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="img/pm_logo.png" alt=""></a></li>
+        <li><a href="#"><img src="img/puresound.png" alt=""></a></li>
+        <li><a href="#"><img src="img/Regal-Tip-Logo_1.jpg" alt=""></a></li>
+      </ul>
+    </aside>
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row" style="margin-left: -30px">
+          <div class="col-6">
+              <div id="map"><img src="holder.js/100px560?auto=yes"></div>
+          </div>
+          <div class="col-6 contact-form">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="col-8 offset-2">
+                  <div class="form-group">
+                      <input type="text" class="form-control input-text" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control input-text" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message." rows="3"></textarea>
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  
+                  <div class="clearfix"></div>
+                  <div class="col-lg-12 text-center">
+                      <div id="success"></div>
+                      <button type="submit" class="btn btn-xl">Send Message</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center text-white">
+          <p style="margin-top: 10px">Copyright &copy; Harmonix Music 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer> 
+
+    <script src="./vendor/jquery-3.3.1.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/jquery-simplyscroll/jquery.simplyscroll.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js" ></script>
+
+    <script type="text/javascript" src="./vendor/holder.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCdYVZmSEcxnaG0ASZAddiwaCQg4xmRc"></script>
+    
+    <script src="js/harmonix.js"></script>
+
+  </body>
+</html>
